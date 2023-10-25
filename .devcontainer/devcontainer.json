@@ -1,6 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3",
   "features": {
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {},
     "ghcr.io/devcontainers/features/nix:1": {}
   }
 }
