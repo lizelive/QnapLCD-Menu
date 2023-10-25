@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "qnaplcd"
+version = "0.1.0"
+description = "QNAP Front-panel display menu system for TrueNAS SCALE (and others)"
+authors = ["Stephen Houser <stephenhouser@gmail.com>", "LizeLive <github@lize.live>" ]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyserial = "^3.5"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+qnaplcd = 'qnaplcd:main'
+
+[project.entry-points.'qnaplcd.plugins']
+a = 'qnaplcd'

@@ -1,0 +1,3 @@
+PORT = '/dev/ttyS1'
+PORT_SPEED = 1200
+DISPLAY_TIMEOUT = 30
