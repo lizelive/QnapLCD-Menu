@@ -23,6 +23,14 @@ def plugins():
     click.echo(discovered_plugins)
 
 @qnaplcd.command()
+def off():
+    "turn off the lcd"
+    lcd = QnapLCD()
+    lcd.backlight(False)
+    lcd.reset()
+    lcd.clear()
+
+@qnaplcd.command()
 def preinit():
     "a short pre-initialization script to print a message on the LCD panel and terminate."
     lcd = QnapLCD()
